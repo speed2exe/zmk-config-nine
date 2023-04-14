@@ -37,7 +37,7 @@
             bindings = <
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
-                       &kp LSHFT     &mt LALT R   &mt LCRTL N    &mt LGUI T
+                       &kp LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
                                                                                    &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
                                                 &lt nav SPACE    &mo right
                                                                                         &mo left     &lt sys SPACE
