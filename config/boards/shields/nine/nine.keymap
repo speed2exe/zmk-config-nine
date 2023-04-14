@@ -35,10 +35,10 @@
 
         def {
             bindings = <
-                                        &kp L       &kp H           &kp W
-                                                                                        &kp P          &kp U        &kp O
-                       &mt LALT S     &mt LCTRL R   &mt LSHFT N    &mt LGUI T
-                                                                                   &mt RGUI D     &mt RSHFT E   &mt RCTRL A    &mt RALT I
+                                        &kp L       &kp H           &kp S
+                                                                                        &kp I          &kp U        &kp O
+                       &kp LSHFT     &mt LALT R   &mt LCRTL N    &mt LGUI T
+                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
                                                 &lt nav SPACE    &mo right
                                                                                         &mo left     &lt sys SPACE
                 >;
@@ -46,10 +46,10 @@
 
         right {
             bindings = <
-                                       &kp GRAVE      &kp LBKT     &kp RBKT
-                                                                                   &kp Q    &kp K    &kp Y
-                        &trans     &mt LCTRL SQT  &mt LSHFT COMMA   &mt LGUI DOT
-                                                                            &mt RGUI G   &mt RSHFT X   &mt RCTRL J    &mt RALT SEMI
+                                        &kp GRAVE    &kp SLASH      &kp Z
+                                                                                   &kp P    &kp K    &kp Y
+                        &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
+                                                                            &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
                                                     &trans      &trans
                                                                                     &trans   &trans
                 >;
@@ -57,10 +57,10 @@
 
         left {
             bindings = <
-                                       &kp F      &kp V     &kp Z
-                                                                                   &kp N4    &kp N5    &kp N6
-                          &mt LALT SLASH  &mt LCTRL C  &mt LSHFT B   &mt LGUI M
-                                                                            &mt RGUI N1   &mt RSHFT N2   &mt RCTRL N3    &mt RALT N0
+                                        &kp F      &kp V     &kp W
+                                                                                   &kp Q     &kp N5    &kp N4
+                        &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
+                                                                            &mt RGUI N3   &mt RCTRL N2   &mt RALT N1    &trans
                                                     &trans      &trans
                                                                                 &trans   &trans
                 >;
@@ -68,10 +68,10 @@
 
         extra {
             bindings = <
-                                    &trans    &trans    &trans
-                                                                                  &trans    &trans   &trans
-                       &trans   &mt LCTRL BSLH   &mt LSHFT MINUS   &mt LGUI EQUAL
-                                                                            &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &trans
+                                    &trans      &kp LBKT     &kp RBKT
+                                                                                  &kp SEMI    &kp N0   &kp N9
+                       &trans   &mt LALT BSLH   &mt LCTRL MINUS   &mt LGUI EQUAL
+                                                                            &mt RGUI N8  &mt RCTRL N7  &mt RALT N6   &trans
                                                     &trans      &trans
                                                                                     &trans  &trans
                 >;
@@ -79,9 +79,9 @@
 
         nav {
             bindings = <
-                            &bt BT_SEL 0   &bt BT_NXT     &bt BT_CLR
+                               &bt BT_SEL 0   &bt BT_NXT     &bt BT_CLR
                                                                                 &kp PG_UP      &kp UP         &kp PG_DN
-                      &kp LALT    &kp LCTRL      &kp LSHFT      &kp LGUI
+                      &trans    &kp LALT      &kp LCTRL      &kp LGUI
                                                                              &kp LEFT       &kp DOWN       &kp RIGHT      &trans
                                            &trans      &trans
                                                                                 &kp RET     &kp BSPC
@@ -90,15 +90,15 @@
 
         sys {
             bindings = <
-                            &kp C_VOL_UP    &kp HOME   &kp INS
-                                                                                    &trans     &trans   &trans
+                                   &kp C_VOL_UP    &kp HOME   &kp INS
+                                                                                &trans     &trans   &trans
                      &kp C_MUTE    &kp C_VOL_DN    &kp END    &kp DEL
-                                                                                 &kp RGUI     &kp RSHFT   &kp RCTRL    &kp RALT
+                                                                            &kp RGUI     &kp RCTRL   &kp RALT    &trans
                                              &kp TAB     &kp ESC
-                                                                                    &trans   &trans
+                                                                                &trans   &trans
                 >;
         };
 
-     };
+    };
 
 };
