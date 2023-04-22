@@ -20,7 +20,7 @@
     tapping-term-ms = <1024>;
 };
 
-&sl {
+&sk {
     quick-release;
 };
 
@@ -34,7 +34,7 @@
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
                        &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
-                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &sl RSHFT
+                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
                                                 &lt nav SPACE    &sl right
                                                                                         &sl left     &lt sys SPACE
                 >;
