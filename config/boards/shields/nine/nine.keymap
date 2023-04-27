@@ -29,14 +29,22 @@
     keymap {
         compatible = "zmk,keymap";
 
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
+            tri_layer {
+                if-layer = <right left>;
+                then-layer = <extra>;
+            };
+        };
+
         def {
             bindings = <
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
                        &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
                                                                                    &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
-                                                &lt nav SPACE    &sl right
-                                                                                        &sl left     &lt sys SPACE
+                                                &lt nav SPACE    &mo right
+                                                                                        &mo left     &lt sys SPACE
                 >;
         };
 
@@ -47,7 +55,7 @@
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
                                                                             &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
                                                     &trans      &trans
-                                                                                    &sl extra   &trans
+                                                                                    &trans   &trans
                 >;
         };
 
@@ -57,7 +65,7 @@
                                                                                    &kp Q     &kp N5    &kp N4
                         &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N3   &mt RCTRL N2   &mt RALT N1    &trans
-                                                    &trans      &sl extra
+                                                    &trans      &trans
                                                                                 &trans   &trans
                 >;
         };
