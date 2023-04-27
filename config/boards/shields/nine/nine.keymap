@@ -26,16 +26,16 @@
 
 / {
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <right left>;
+            then-layer = <extra>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
-
-        // conditional_layers {
-        //     compatible = "zmk,conditional-layers";
-        //     tri_layer {
-        //         if-layers = <right left>;
-        //         then-layer = <extra>;
-        //     };
-        // };
 
         def {
             bindings = <
