@@ -62,9 +62,9 @@
         left {
             bindings = <
                                         &kp F      &kp V     &kp W
-                                                                                   &kp Q     &kp N5    &kp N4
+                                                                                   &kp Q     &kp N0    &kp SEMI
                         &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
-                                                                            &mt RGUI N3   &mt RCTRL N2   &mt RALT N1    &trans
+                                                                            &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
                                                     &trans      &trans
                                                                                 &trans   &trans
                 >;
@@ -72,10 +72,10 @@
 
         extra {
             bindings = <
-                                    &trans      &kp LBKT     &kp RBKT
-                                                                                  &kp SEMI    &kp N0   &kp N9
+                                    &kp LBKT     &kp RBKT      &trans
+                                                                                  &kp N7    &kp N8   &kp N9
                        &trans   &mt LALT BSLH   &mt LCTRL MINUS   &mt LGUI EQUAL
-                                                                            &mt RGUI N8  &mt RCTRL N7  &mt RALT N6   &trans
+                                                                            &mt RGUI N4  &mt RCTRL N5  &mt RALT N6   &trans
                                                     &trans      &trans
                                                                                     &trans  &trans
                 >;
