@@ -20,9 +20,9 @@
     tapping-term-ms = <1024>;
 };
 
-&sk {
-    quick-release;
-};
+// &sk {
+//     quick-release;
+// };
 
 / {
 
@@ -41,8 +41,8 @@
             bindings = <
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
-                       &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
-                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
+                       &kp LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
+                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
                                                 &lt nav SPACE    &mo right
                                                                                         &mo left     &lt sys SPACE
                 >;
