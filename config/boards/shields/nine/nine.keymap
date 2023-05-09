@@ -24,6 +24,10 @@
     quick-release;
 };
 
+&sl {
+    quick-release;
+};
+
 / {
 
     keymap {
