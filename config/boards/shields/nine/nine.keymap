@@ -57,9 +57,9 @@
                                         &kp GRAVE    &kp SLASH      &kp Z
                                                                                    &kp P    &kp K    &kp Y
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
-                                                                            &mt RGUI G   &mt RCTRL X   &mt RALT J    &kp RET
+                                                                            &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
                                                     &trans      &trans
-                                                                                    &sl extra   &kp BSPC
+                                                                                    &sl extra   &trans
                 >;
         };
 
@@ -67,9 +67,9 @@
             bindings = <
                                         &kp F      &kp V     &kp W
                                                                                    &kp Q     &kp N0    &kp SEMI
-                        &kp ESC   &mt LALT C    &mt LCTRL B   &mt LGUI M
+                        &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
-                                                    &kp TAB     &sl extra
+                                                    &trans      &sl extra
                                                                                 &trans   &trans
                 >;
         };
@@ -92,7 +92,7 @@
                       &trans    &kp LALT      &kp LCTRL      &kp LGUI
                                                                              &kp LEFT       &kp DOWN       &kp RIGHT      &trans
                                            &trans      &trans
-                                                                                &trans      &trans
+                                                                                &kp RET     &kp BSPC
                 >;
         };
 
@@ -102,7 +102,7 @@
                                                                                 &trans     &trans   &trans
                      &kp C_MUTE    &kp C_VOL_DN    &kp END    &kp DEL
                                                                             &kp RGUI     &kp RCTRL   &kp RALT    &trans
-                                            &trans      &trans
+                                            &kp TAB     &kp ESC
                                                                                 &trans   &trans
                 >;
         };
