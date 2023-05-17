@@ -20,23 +20,23 @@
     tapping-term-ms = <1024>;
 };
 
-// &sk {
-//     quick-release;
-// };
-//
-// &sl {
-//     quick-release;
-// };
+&sk {
+    quick-release;
+};
+
+&sl {
+    quick-release;
+};
 
 / {
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <right left>;
-            then-layer = <extra>;
-        };
-    };
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <right left>;
+    //         then-layer = <extra>;
+    //     };
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -45,10 +45,10 @@
             bindings = <
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
-                       &kp LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
-                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
-                                                &lt nav SPACE    &mo right
-                                                                                        &mo left     &lt sys SPACE
+                       &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
+                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
+                                                &lt nav SPACE    &sl right
+                                                                                        &sl left     &lt sys SPACE
                 >;
         };
 
@@ -57,9 +57,9 @@
                                         &kp GRAVE    &kp SLASH      &kp Z
                                                                                    &kp P    &kp K    &kp Y
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
-                                                                            &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
+                                                                            &mt RGUI G   &mt RCTRL X   &mt RALT J    &kp RET
                                                     &trans      &trans
-                                                                                    &trans      &trans
+                                                                                    &sl extra   &kp BSPC
                 >;
         };
 
@@ -67,9 +67,9 @@
             bindings = <
                                         &kp F      &kp V     &kp W
                                                                                    &kp Q     &kp N0    &kp SEMI
-                        &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
+                        &kp ESC   &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
-                                                    &trans      &trans
+                                                    &kp TAB     &sl extra
                                                                                 &trans   &trans
                 >;
         };
@@ -81,7 +81,7 @@
                        &trans   &mt LALT BSLH   &mt LCTRL MINUS   &mt LGUI EQUAL
                                                                             &mt RGUI N4  &mt RCTRL N5  &mt RALT N6   &trans
                                                     &trans      &trans
-                                                                                    &trans  &trans
+                                                                                &trans      &trans
                 >;
         };
 
@@ -92,7 +92,7 @@
                       &trans    &kp LALT      &kp LCTRL      &kp LGUI
                                                                              &kp LEFT       &kp DOWN       &kp RIGHT      &trans
                                            &trans      &trans
-                                                                                &kp RET     &kp BSPC
+                                                                                &trans      &trans
                 >;
         };
 
@@ -102,7 +102,7 @@
                                                                                 &trans     &trans   &trans
                      &kp C_MUTE    &kp C_VOL_DN    &kp END    &kp DEL
                                                                             &kp RGUI     &kp RCTRL   &kp RALT    &trans
-                                             &kp TAB     &kp ESC
+                                            &trans      &trans
                                                                                 &trans   &trans
                 >;
         };
