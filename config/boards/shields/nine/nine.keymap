@@ -20,23 +20,23 @@
     tapping-term-ms = <1024>;
 };
 
-&sk {
-    quick-release;
-};
-
-&sl {
-    quick-release;
-};
+// &sk {
+//     quick-release;
+// };
+//
+// &sl {
+//     quick-release;
+// };
 
 / {
 
-    // conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <right left>;
-    //         then-layer = <extra>;
-    //     };
-    // };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <right left>;
+            then-layer = <extra>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -45,10 +45,10 @@
             bindings = <
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
-                       &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
-                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
-                                                &lt nav SPACE    &sl right
-                                                                                        &sl left     &lt sys SPACE
+                       &kp LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
+                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
+                                                &lt nav SPACE    &mo right
+                                                                                        &mo left     &lt sys SPACE
                 >;
         };
 
@@ -59,7 +59,7 @@
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
                                                                             &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
                                                     &trans      &trans
-                                                                                    &sl extra   &trans
+                                                                                    &trans      &trans
                 >;
         };
 
@@ -69,7 +69,7 @@
                                                                                    &kp Q     &kp N0    &kp SEMI
                         &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
-                                                    &trans      &sl extra
+                                                    &trans      &trans
                                                                                 &trans   &trans
                 >;
         };
