@@ -59,7 +59,7 @@
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
                                                                             &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
                                                     &trans      &trans
-                                                                                    &trans      &trans
+                                                                                    &trans      &kp BSPC
                 >;
         };
 
@@ -69,7 +69,7 @@
                                                                                    &kp Q     &kp N0    &kp SEMI
                         &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
-                                                    &trans      &trans
+                                                    &kp TAB     &trans
                                                                                 &trans   &trans
                 >;
         };
@@ -89,10 +89,10 @@
             bindings = <
                                &bt BT_SEL 0   &bt BT_NXT     &bt BT_CLR
                                                                                 &kp PG_UP      &kp UP         &kp PG_DN
-                      &trans    &kp LALT      &kp LCTRL      &kp LGUI
+                        &trans    &kp LALT      &kp LCTRL      &kp LGUI
                                                                              &kp LEFT       &kp DOWN       &kp RIGHT      &trans
                                            &trans      &trans
-                                                                                &kp RET     &kp BSPC
+                                                                                &kp RET     &kp DEL
                 >;
         };
 
@@ -100,9 +100,9 @@
             bindings = <
                                    &kp C_VOL_UP    &kp HOME   &kp INS
                                                                                 &trans     &trans   &trans
-                     &kp C_MUTE    &kp C_VOL_DN    &kp END    &kp DEL
+                        &trans    &kp C_VOL_DN    &kp END    &kp C_MUTE
                                                                             &kp RGUI     &kp RCTRL   &kp RALT    &trans
-                                            &kp TAB     &kp ESC
+                                            &kp K_APP     &kp ESC
                                                                                 &trans   &trans
                 >;
         };
