@@ -47,8 +47,8 @@
                                                                                         &kp I          &kp U        &kp O
                        &kp LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
                                                                                    &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
-                                                &lt nav SPACE    &mo right
-                                                                                        &mo left     &lt sys SPACE
+                                            &mo right       &lt nav SPACE
+                                                                                      &lt sys SPACE     &mo left
                 >;
         };
 
