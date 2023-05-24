@@ -20,13 +20,13 @@
     tapping-term-ms = <1024>;
 };
 
-// &sk {
-//     quick-release;
-// };
-//
-// &sl {
-//     quick-release;
-// };
+&sk {
+    quick-release;
+};
+
+&sl {
+    quick-release;
+};
 
 / {
 
@@ -45,10 +45,10 @@
             bindings = <
                                         &kp L       &kp H           &kp S
                                                                                         &kp I          &kp U        &kp O
-                       &kp LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
-                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &kp RSHFT
-                                            &lt right SPACE       &mo nav
-                                                                                      &mo sys       &lt left SPACE
+                       &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
+                                                                                   &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
+                                            &lt nav SPACE       &sl right
+                                                                                      &sl left       &lt sys SPACE
                 >;
         };
 
@@ -59,7 +59,7 @@
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
                                                                             &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
                                                     &trans      &trans
-                                                                                 &kp RET     &lt left BSPC
+                                                                                 &trans   &trans
                 >;
         };
 
@@ -69,8 +69,8 @@
                                                                                    &kp Q     &kp N0    &kp SEMI
                         &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
-                                            &lt right TAB     &kp ESC
-                                                                                &trans   &trans
+                                            &trans      &trans
+                                                                                &trans      &trans
                 >;
         };
 
@@ -92,7 +92,7 @@
                         &trans    &kp LALT      &kp LCTRL      &kp LGUI
                                                                              &kp LEFT       &kp DOWN       &kp RIGHT      &trans
                                                 &trans      &trans
-                                                                                &trans      &trans
+                                                                                &kp RET      &kp BSPC
                 >;
         };
 
@@ -102,7 +102,7 @@
                                                                                 &trans     &trans   &trans
                         &kp C_MUTE    &kp C_VOL_DN    &kp END    &kp DEL
                                                                             &kp RGUI     &kp RCTRL   &kp RALT    &trans
-                                            &trans      &trans
+                                            &kp TAB      &kp ESC
                                                                                 &trans   &trans
                 >;
         };
