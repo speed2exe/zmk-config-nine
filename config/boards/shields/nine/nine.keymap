@@ -47,8 +47,8 @@
                                                                                         &kp I          &kp U        &kp O
                        &sk LSHFT     &mt LALT R   &mt LCTRL N    &mt LGUI T
                                                                                    &mt RGUI D     &mt RCTRL E      &mt RALT A    &sk RSHFT
-                                            &lt nav SPACE       &sl right
-                                                                                      &sl left       &lt sys SPACE
+                                                &sl right   &lt nav SPACE
+                                                                                      &lt sys SPACE     &sl left
                 >;
         };
 
@@ -58,8 +58,8 @@
                                                                                    &kp P    &kp K    &kp Y
                         &trans     &mt LALT SQT  &mt LCTRL COMMA   &mt LGUI DOT
                                                                             &mt RGUI G   &mt RCTRL X   &mt RALT J    &trans
-                                                    &trans      &trans
-                                                                                 &trans   &trans
+                                                    &trans      &kp ESC
+                                                                                 &trans     &trans
                 >;
         };
 
@@ -69,8 +69,8 @@
                                                                                    &kp Q     &kp N0    &kp SEMI
                         &trans    &mt LALT C    &mt LCTRL B   &mt LGUI M
                                                                             &mt RGUI N1   &mt RCTRL N2   &mt RALT N3    &trans
-                                            &trans      &trans
-                                                                                &trans      &trans
+                                                    &trans      &trans
+                                                                                &kp RET     &trans
                 >;
         };
 
@@ -88,7 +88,7 @@
         nav {
             bindings = <
                                &bt BT_SEL 0   &bt BT_NXT     &bt BT_CLR
-                                                                                &kp PG_UP      &kp UP         &kp PG_DN
+                                                                                &kp PG_UP      &kp UP       &kp PG_DN
                         &trans    &kp LALT      &kp LCTRL      &kp LGUI
                                                                              &kp LEFT       &kp DOWN       &kp RIGHT      &trans
                                                 &trans      &trans
